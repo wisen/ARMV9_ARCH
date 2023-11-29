@@ -9,9 +9,8 @@ ARM V9 Architecture reference Manual（Based on Version:0487J.a）
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 架构章节:
    index.md
-
 
 Indices and tables
 ==================
