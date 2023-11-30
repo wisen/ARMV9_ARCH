@@ -1,30 +1,80 @@
 ===============================================================
-Part A Arm Architecture Introduction and Overview
+Part G The AArch32 System Level Architecture 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-Chapter A1 Introduction to the Arm Architecture
+Chapter G1 The AArch32 System Level Programmers’ Model 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a11
-   a12
-   a13
-   a14
-   a15
-   a16
-   a17
+   g1*
 
-Chapter A2 Armv8-A Architecture Extensions
+Chapter G2 AArch32 Self-hosted Debug 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a21
-   a22
+   g2*
+
+Chapter G3 AArch32 Self-hosted Trace 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   g3*
+
+Chapter G4 The AArch32 System Level Memory Model 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   g4*
+
+Chapter G5 The AArch32 Virtual Memory System Architecture 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   g5*
+
+Chapter G6 The Generic Timer in AArch32 state 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   g6*
+
+Chapter G7 AArch32 System Register Encoding 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   g7*
+
+Chapter G8 AArch32 System Register Descriptions
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   g8*
+
