@@ -13,6 +13,15 @@ ARM V9 Architecture reference Manual（Based on Version:0487J.a）
    
    PartA
    PartB
+   PartC
+   PartD
+   PartE
+   PartF
+   PartG
+   PartH
+   PartI
+   PartJ
+   PartK
 
 Indices and tables
 ==================
