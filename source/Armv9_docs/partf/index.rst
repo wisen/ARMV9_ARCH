@@ -1,30 +1,61 @@
 ===============================================================
-Part A Arm Architecture Introduction and Overview
+Part F The AArch32 Instruction Sets 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-Chapter A1 Introduction to the Arm Architecture
+Chapter F1 About the T32 and A32 Instruction Descriptions 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a11
-   a12
-   a13
-   a14
-   a15
-   a16
-   a17
+   f1*
 
-Chapter A2 Armv8-A Architecture Extensions
+Chapter F2 The AArch32 Instruction Sets Overview 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a21
-   a22
+   f2*
+
+Chapter F3 T32 Instruction Set Encoding 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   f3*
+
+Chapter F4 A32 Instruction Set Encoding 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   f4*
+
+Chapter F5 T32 and A32 Base Instruction Set Instruction Descriptions 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   f5*
+
+Chapter F6 T32 and A32 Advanced SIMD and Floating-point Instruction Descriptions
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   f6*
