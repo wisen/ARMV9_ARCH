@@ -1,30 +1,63 @@
 ===============================================================
-Part A Arm Architecture Introduction and Overview
+Part I Memory-mapped Components of the Arm Architecture 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-Chapter A1 Introduction to the Arm Architecture
+Chapter I1 Requirements for Memory-mapped Components 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a11
-   a12
-   a13
-   a14
-   a15
-   a16
-   a17
+   i1*
 
-Chapter A2 Armv8-A Architecture Extensions
+Chapter I2 System Level Implementation of the Generic Timer 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a21
-   a22
+   i2*
+
+Chapter I3 Recommended External Interface to the Performance Monitors 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   i3*
+
+Chapter I4 Recommended External Interface to the Activity Monitors 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   i4*
+
+Chapter I5 RAS System Architecture 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   i5*
+
+Chapter I6 External System Control Register Descriptions
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   i6*
+
+
