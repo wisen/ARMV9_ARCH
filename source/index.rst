@@ -9,10 +9,10 @@ ARM V9 Architecture reference Manual（Based on Version:0487J.a）
 
 .. toctree::
    :maxdepth: 2
+   :glob:
    :caption: Contents:
-   
-   Armv9_docs/PartA
-   Armv9_docs/PartB
+
+   Armv9_docs/*/index
 
 Indices and tables
 ==================
