@@ -14,14 +14,6 @@ ARM V9 Architecture reference Manual（Based on Version:0487J.a）
    Armv9_docs/PartA
    Armv9_docs/PartB
    Armv9_docs/PartC
-   Armv9_docs/PartD
-   Armv9_docs/PartE
-   Armv9_docs/PartF
-   Armv9_docs/PartG
-   Armv9_docs/PartH
-   Armv9_docs/PartI
-   Armv9_docs/PartJ
-   Armv9_docs/PartK
 
 Indices and tables
 ==================
