@@ -1,30 +1,26 @@
 ===============================================================
-Part A Arm Architecture Introduction and Overview
+Part E The AArch32 Application Level Architecture
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-Chapter A1 Introduction to the Arm Architecture
+Chapter E1 The AArch32 Application Level Programmers’ Model
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a11
-   a12
-   a13
-   a14
-   a15
-   a16
-   a17
+   e1*
 
-Chapter A2 Armv8-A Architecture Extensions
+
+Chapter E2 The AArch32 Application Level Memory Model
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a21
-   a22
+   e2*
