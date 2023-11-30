@@ -11,21 +11,24 @@ Chapter A1 Introduction to the Arm Architecture
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a11
-   a12
-   a13
-   a14
-   a15
-   a16
-   a17
+   a1*
 
 Chapter A2 Armv8-A Architecture Extensions
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a21
-   a22
+   a2*
 
+Chapter A3 Armv9 Architecture Extensions
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   a3*
