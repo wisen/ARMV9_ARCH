@@ -1,30 +1,89 @@
 ===============================================================
-Part A Arm Architecture Introduction and Overview
+Part H External Debug 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-Chapter A1 Introduction to the Arm Architecture
+Chapter H1 About External Debug 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a11
-   a12
-   a13
-   a14
-   a15
-   a16
-   a17
+   h1*
 
-Chapter A2 Armv8-A Architecture Extensions
+Chapter H2 Debug State 
 ===============================================================
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   a21
-   a22
+   h2*
+
+Chapter H3 Halting Debug Events 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   h3*
+
+Chapter H4 The Debug Communication Channel and Instruction Transfer Register 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   h4*
+
+Chapter H5 The Embedded Cross-Trigger Interface 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   h5*
+
+Chapter H6 Debug Reset and Powerdown Support 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   h6*
+
+Chapter H7 The PC Sample-based Profiling Extension 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   h7*
+
+Chapter H8 About the External Debug Registers 
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   h8*
+
+Chapter H9 External Debug Register Descriptions
+===============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   h9*
+
