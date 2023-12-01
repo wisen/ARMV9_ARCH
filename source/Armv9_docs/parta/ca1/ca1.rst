@@ -7,4 +7,4 @@ Chapter A1 Introduction to the Arm Architecture
    :glob:
    :caption: Contents:
 
-   ca1/a1*
+   a*
