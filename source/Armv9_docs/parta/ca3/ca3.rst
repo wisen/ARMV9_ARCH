@@ -7,4 +7,4 @@ Chapter A3 Armv9 Architecture Extensions
    :glob:
    :caption: Contents:
 
-   ca3/a3*
+   a3*
