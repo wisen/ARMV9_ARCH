@@ -7,4 +7,4 @@ Part C The AArch64 Instruction Set
    :glob:
    :caption: Contents:
 
-   c*/c*
+   c*/cc*
