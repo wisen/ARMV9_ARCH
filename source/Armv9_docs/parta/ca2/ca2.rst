@@ -7,4 +7,4 @@ Chapter A2 Armv8-A Architecture Extensions
    :glob:
    :caption: Contents:
 
-   ca2/a2*
+   a2*
