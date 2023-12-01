@@ -7,4 +7,4 @@ Part D The AArch64 System Level Architecture
    :glob:
    :caption: Contents:
 
-   d*/d*
+   c*/c*
