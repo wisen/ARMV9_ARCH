@@ -3,14 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ARMV9_ARCH's documentation!
-======================================
+ARM V9 Architecture reference Manual（Based on Version:0487J.a）
+================================================================
+
 
 .. toctree::
    :maxdepth: 2
+   :glob:
    :caption: Contents:
 
-
+   Armv9_docs/*/part*
 
 Indices and tables
 ==================

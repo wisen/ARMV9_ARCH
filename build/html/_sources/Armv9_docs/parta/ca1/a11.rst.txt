@@ -1,0 +1,15 @@
+========================================
+A1.1 About the Arm architecture
+========================================
+
+    reference
+
+The Arm architecture described in this Architecture Reference Manual defines the behavior of an abstract machine, 
+referred to as a processing element, often abbreviated to PE. Implementations compliant with the Arm architecture 
+must conform to the described behavior of the processing element. It is not intended to describe how to build an 
+implementation of the PE, nor to limit the scope of such implementations beyond the defined behaviors.
+
+Except where the architecture specifies differently, the programmer-visible behavior of an implementation that is 
+compliant with the Arm architecture must be the same as a simple sequential execution of the program on the 
+processing element. This programmer-visible behavior does not include the execution time of the program.
+

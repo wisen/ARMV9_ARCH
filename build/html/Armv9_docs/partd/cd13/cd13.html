@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter D13 The Activity Monitors Extension &mdash; ARMV9_ARCH V1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=3f0bcac8"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Chapter D14 The Statistical Profiling Extension" href="../cd14/cd14.html" />
+    <link rel="prev" title="Chapter D12 The Performance Monitors Extension" href="../cd12/cd12.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            ARMV9_ARCH
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../parta/parta.html">Part A Arm Architecture Introduction and Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partb/partb.html">Part B The AArch64 Application Level Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partc/partc.html">Part C The AArch64 Instruction Set</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../partd.html">Part D The AArch64 System Level Architecture</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../cd01/cd1.html">Chapter D1 The AArch64 System Level Programmers’ Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd02/cd2.html">Chapter D2 AArch64 Self-hosted Debug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd03/cd3.html">Chapter D3 AArch64 Self-hosted Trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd04/cd4.html">Chapter D4 The Embedded Trace Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd05/cd5.html">Chapter D5 ETE Protocol Descriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd06/cd6.html">Chapter D6 The Trace Buffer Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd07/cd7.html">Chapter D7 The AArch64 System Level Memory Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd08/cd8.html">Chapter D8 The AArch64 Virtual Memory System Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd09/cd9.html">Chapter D9 The Granule Protection Check Mechanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd10/cd10.html">Chapter D10 The Memory Tagging Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd11/cd11.html">Chapter D11 The Generic Timer in AArch64 state</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd12/cd12.html">Chapter D12 The Performance Monitors Extension</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Chapter D13 The Activity Monitors Extension</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cd14/cd14.html">Chapter D14 The Statistical Profiling Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd15/cd15.html">Chapter D15 Statistical Profiling Extension Sample Record Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd16/cd16.html">Chapter D16 The Branch Record Buffer Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd17/cd17.html">Chapter D17 RAS PE Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd18/cd18.html">Chapter D18 AArch64 System Register Encoding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cd19/cd19.html">Chapter D19 AArch64 System Register Descriptions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../parte/parte.html">Part E The AArch32 Application Level Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partf/partf.html">Part F The AArch32 Instruction Sets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partg/partg.html">Part G The AArch32 System Level Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parth/parth.html">Part H External Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parti/parti.html">Part I Memory-mapped Components of the Arm Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partj/partj.html">Part J Architectural Pseudocode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partk/partk.html">Part K Appendixes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ARMV9_ARCH</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../partd.html">Part D The AArch64 System Level Architecture</a></li>
+      <li class="breadcrumb-item active">Chapter D13 The Activity Monitors Extension</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/Armv9_docs/partd/cd13/cd13.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="chapter-d13-the-activity-monitors-extension">
+<h1>Chapter D13 The Activity Monitors Extension<a class="headerlink" href="#chapter-d13-the-activity-monitors-extension" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../cd12/cd12.html" class="btn btn-neutral float-left" title="Chapter D12 The Performance Monitors Extension" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../cd14/cd14.html" class="btn btn-neutral float-right" title="Chapter D14 The Statistical Profiling Extension" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2023, Wisen.Wang。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B2.1 About the Arm memory model &mdash; ARMV9_ARCH V1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=3f0bcac8"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/translations.js?v=beaddf03"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="B2.2 Atomicity in the Arm architecture" href="b22.html" />
+    <link rel="prev" title="Chapter B2 The AArch64 Application Level Memory Model" href="cb2.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            ARMV9_ARCH
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../parta/parta.html">Part A Arm Architecture Introduction and Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../partb.html">Part B The AArch64 Application Level Architecture</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../cb1/cb1.html">Chapter B1 The AArch64 Application Level Programmers’ Model</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="cb2.html">Chapter B2 The AArch64 Application Level Memory Model</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">B2.1 About the Arm memory model</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#b2-1-1-address-space">B2.1.1 Address space</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#b2-1-2-memory-type-overview">B2.1.2 Memory type overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#b2-1-3-sve-memory-model">B2.1.3 SVE memory model</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="b22.html">B2.2 Atomicity in the Arm architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b23.html">B2.3 Definition of the Arm memory model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b24.html">B2.4 Caches and memory hierarchy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b25.html">B2.5 Alignment support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b26.html">B2.6 Endian support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b27.html">B2.7 Memory types and attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b28.html">B2.8 Mismatched memory attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="b29.html">B2.9 Synchronization and semaphores</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../partc/partc.html">Part C The AArch64 Instruction Set</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partd/partd.html">Part D The AArch64 System Level Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parte/parte.html">Part E The AArch32 Application Level Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partf/partf.html">Part F The AArch32 Instruction Sets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partg/partg.html">Part G The AArch32 System Level Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parth/parth.html">Part H External Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../parti/parti.html">Part I Memory-mapped Components of the Arm Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partj/partj.html">Part J Architectural Pseudocode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../partk/partk.html">Part K Appendixes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ARMV9_ARCH</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../partb.html">Part B The AArch64 Application Level Architecture</a></li>
+          <li class="breadcrumb-item"><a href="cb2.html">Chapter B2 The AArch64 Application Level Memory Model</a></li>
+      <li class="breadcrumb-item active">B2.1 About the Arm memory model</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/Armv9_docs/partb/cb2/b21.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="toctree-wrapper compound">
+</div>
+<section id="b2-1-about-the-arm-memory-model">
+<h1>B2.1 About the Arm memory model<a class="headerlink" href="#b2-1-about-the-arm-memory-model" title="Link to this heading"></a></h1>
+<p>The Arm architecture is a weakly ordered memory architecture that permits the observation and completion of memory accesses in a different order from the program order. The following sections of this chapter provide the complete definition of the memory model. This introduction is not intended to contradict the definition found in those sections.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>?????ǽ???
+</pre></div>
+</div>
+<p>In general, the basic principles of the memory model are:</p>
+<ul class="simple">
+<li><p>To provide a memory model that has similar weaknesses to those found in the memory models used by high-level programming languages such as C or Java. For example, by permitting independent memory accesses to be reordered as seen by other observers.</p></li>
+<li><p>To avoid the requirement for multi-copy atomicity in the majority of memory types.</p></li>
+<li><p>The provision of instructions and memory barriers to compensate for the lack of multi-copy atomicity in the cases where it would be needed is required.</p></li>
+<li><p>The use of address, data, and control dependencies in the creation of order so as to avoid having excessive numbers of barriers or other explicit instructions in common situations where some order is required by the programmer or the compiler.</p></li>
+<li><p>If FEAT_MTE2 is implemented, the definitions of the memory model which apply to data accesses and data apply to Allocation Tag accesses and Allocation tags.</p></li>
+</ul>
+<p>This section contains:</p>
+<ul class="simple">
+<li><p>Address space.</p></li>
+<li><p>Memory type overview on page B2-161.</p></li>
+</ul>
+<section id="b2-1-1-address-space">
+<h2>B2.1.1 Address space<a class="headerlink" href="#b2-1-1-address-space" title="Link to this heading"></a></h2>
+<p>Address calculations are performed using 64-bit registers. However, supervisory software can configure the top
+eight address bits for use as a tag, as described in Address tagging on page D8-5894. If this is done, address
+bits[63:56]:</p>
+<ul class="simple">
+<li><p>Are not considered when determining whether the address is valid.</p></li>
+<li><p>Are never propagated to the Program Counter.</p></li>
+</ul>
+<p>Supervisory software determines the valid address range. Attempting to access an address that is not valid generates
+an MMU fault.</p>
+<p>Simple sequential execution of instructions might overflow the valid address range. For more information, see
+Virtual address space overflow on page D7-5763.</p>
+<p>Memory accesses use the Mem[] function. This function makes an access of the required type. If supervisory software
+configures the top eight address bits for use as a tag, the top eight address bits are ignored.</p>
+<p>The AccessType defines the different access types and attributes.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Note</p>
+<ul class="simple">
+<li><p>Chapter D7 The AArch64 System Level Memory Model and Chapter D8 The AArch64 Virtual Memory System Architecture include descriptions of memory system features that are transparent to the application, including memory access, address translation, memory maintenance instructions, and alignment checking and the associated fault handling. These chapters also include pseudocode descriptions of these operations.</p></li>
+<li><p>For information on the pseudocode that relates to memory accesses, see Basic memory access on page D7-5802, Unaligned memory access on page D7-5802, and Aligned memory access on page D7-5802</p></li>
+</ul>
+</div>
+</section>
+<section id="b2-1-2-memory-type-overview">
+<h2>B2.1.2 Memory type overview<a class="headerlink" href="#b2-1-2-memory-type-overview" title="Link to this heading"></a></h2>
+<p>The Arm architecture provides the following mutually-exclusive memory types:</p>
+<p>Normal This is generally used for bulk memory operations, both read/write and read-only operations.
+Device The Arm architecture forbids Speculative reads of any type of Device memory. This means Device
+memory types are suitable attributes for read-sensitive Locations.</p>
+<p>Locations of the memory map that are assigned to peripherals are usually assigned the Device
+memory attribute.</p>
+<p>Device memory has additional attributes that have the following effects:</p>
+<ul class="simple">
+<li><p>They prevent aggregation of reads and writes, maintaining the number and size of the</p></li>
+</ul>
+<p>specified memory accesses. See Gathering on page B2-217.
+- They preserve the access order and synchronization requirements for accesses to a single
+peripheral. See Reordering on page B2-218.
+- They indicate whether a write can be acknowledged other than at the end point. See Early
+Write Acknowledgement on page B2-219.</p>
+<p>For more information on Normal memory and Device memory, see Memory types and attributes on page B2-210.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Note</p>
+<p>Earlier versions of the Arm architecture defined a single Device memory type and a Strongly-ordered memory type. A Note in Device memory on page B2-214 describes how these memory types map onto the Armv8 memory types.</p>
+</div>
+</section>
+<section id="b2-1-3-sve-memory-model">
+<h2>B2.1.3 SVE memory model<a class="headerlink" href="#b2-1-3-sve-memory-model" title="Link to this heading"></a></h2>
+<p>SVE predicated memory operations have a vector element size and a memory element access size. The vector
+element size specifies the data that is read from and written to the vector. The memory element access size specifies
+the amount of data that is read from and written to the memory.</p>
+<p>The vector element size and the memory element access size do not need to have the same value.</p>
+<p>For each memory element, there is an associated element address.</p>
+<p>SVE also affects behavior in the following areas:</p>
+<ul class="simple">
+<li><p>Requirements for single-copy atomicity on page B2-162.</p></li>
+<li><p>SVE memory ordering relaxations on page B2-184.</p></li>
+<li><p>Load or Store of Single or Multiple registers on page B2-203.</p></li>
+<li><p>Endianness in SVE operations on page B2-208.</p></li>
+<li><p>SVE loads and stores that access Device memory on page B2-220.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="cb2.html" class="btn btn-neutral float-left" title="Chapter B2 The AArch64 Application Level Memory Model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="b22.html" class="btn btn-neutral float-right" title="B2.2 Atomicity in the Arm architecture" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2023, Wisen.Wang。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
