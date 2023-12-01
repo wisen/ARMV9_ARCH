@@ -1,0 +1,10 @@
+===============================================================
+Chapter D13 The Activity Monitors Extension
+===============================================================
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :caption: Contents:
+
+   d*
