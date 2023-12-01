@@ -12,7 +12,7 @@ ARM V9 Architecture reference Manual（Based on Version:0487J.a）
    :glob:
    :caption: Contents:
 
-   Armv9_docs/*/index
+   Armv9_docs/*/part*
 
 Indices and tables
 ==================
