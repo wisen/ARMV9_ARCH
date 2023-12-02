@@ -9,7 +9,7 @@ B2.1 About the Arm memory model
 
 The Arm architecture is a weakly ordered memory architecture that permits the observation and completion of memory accesses in a different order from the program order. The following sections of this chapter provide the complete definition of the memory model. This introduction is not intended to contradict the definition found in those sections. 
 ::
-    �����ǽ���
+    这里是说ARM架构其实是一个弱内存模型架构
 
 In general, the basic principles of the memory model are:
 
